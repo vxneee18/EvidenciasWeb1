@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: right;
+        }
+        h3{
+            text-align: center;
+        }
+        body{
+            background-color: #ADD8E6;
+        }
+        tr,td{
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Volkswagen Potosina</h1>
+    <h3>Compras online</h3>
+
+    <form action="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Información general del cliente</legend>
+
+            <table style="text-align: center; width: 60%; margin: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" 
+                            title="Nombre" required>
+                        </td>
+                        <td>
+                            <label for="apellidoPaterno">Apellido Paterno: </label><br>
+                            <input type="text" name="apellidoPaterno" id="apellidoPaterno" placeholder="Apellido Paterno" 
+                            title="Apellido Paterno">
+                        </td>
+                        <td>
+                            <label for="apellidoMaterno">Apellido Materno: </label><br>
+                            <input type="text" name="apellidoMaterno" id="apellidoMaterno" placeholder="Apellido Materno" 
+                            title="Apellido Materno">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <label for="user">Nombre de Usuario: </label><br>
+                            <input type="text" name="user" id="user" placeholder="Usuario" 
+                            title="Nombre de Usuario" required>
+                        </td>
+                        <td>
+                            <label for="pass">Password: </label>
+                            <input type="Password" name="pass" id="pass" placeholder="Password"
+                            size="15" maxlength="30"  title="Password" required>
+                        </td>
+                        <td>
+                            <label for="fechaRegistro">Fecha de Registro: </label>
+                            <input type="date" name="fechaRegistro" id="fechaRegistro">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos para facturar</legend>
+
+            <table style="text-align: center; width: 60%; margin: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="país">País: </label> <br>
+                            <select name="país" id="país" size="3">
+                                <option value="1">México</option>
+                                <option value="2">Canadá</option>
+                                <option value="3">Reino Unido</option>
+                                <option value="4">USA</option>
+                                <option value="5">Rusia</option>
+                                <option value="6">Corea del Sur</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="ciudad">Ciudad: </label> <br>
+                            <select name="ciudad" id="ciudad" size="3">
+                                <option value="1">San Luis Potosí</option>
+                                <option value="2">Monterrey</option>
+                                <option value="3">Ciudad Valles</option>
+                                <option value="4">Durango</option>
+                                <option value="5">Guerrero</option>
+                                <option value="6">Guanajuato</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="calle">Calle: </label><br>
+                            <input type="text" name="calle" id="calle" placeholder="Calle"
+                            title="Calle" >
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="númeroCasa">Número de Casa: </label><br>
+                            <input type="number" name="númeroCasa" id="númeroCasa" placeholder="Número de Casa"
+                            title="Número de Casa">
+                        </td>
+                        <td>
+                            <label for="colonia">Colonia: </label><br>
+                            <input type="text" name="colonia" id="colonia" placeholder="Colonia"
+                            title="Colonia">
+                        </td>
+                        <td>
+                            <label for="e-mail">E-mail: </label><br>
+                            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail"
+                            title="E-mail" required>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <label for="rfc">RFC: </label><br>
+                            <input type="text" name="rfc" id="rfc" placeholder="RFC"
+                            title="RFC" required>
+                        </td>
+                        <td>
+                            <label for="códigoPostal">C.P: </label><br>
+                            <input type="text" name="códigoPostal" id="códigoPostal" placeholder="Código Postal"
+                            title="Código Postal">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="términos" id="términos" value="1">
+                            <label for="términos">Acepto términos y condiciones</label><br>
+                            <input type="submit" name="enviar" id="enviar" value="Enviar">
+                            <input type="reset" name="restablecer" id="restablecer" value="Restablecer">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </form>
+    <h2>Febrero 2025, SLP.</h2>
+</body>
+</html>
