@@ -1,0 +1,51 @@
+.capa1{
+    margin-left: 25%;
+    padding: 12px;
+    height: 1000px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: aliceblue;
+    overflow: auto;
+}
+li a{
+    display: block;
+    background-color: aliceblue;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    background-color: rgb(199, 228, 252);
+    color: white;
+}
+li a.activo{
+    background-color: lightblue;
+    color: rgb(48, 187, 233);
+}
+li a:hover:not(.activo){
+    background-color: rgb(142, 218, 243);
+    color: white;
+}
+h1{
+    font-family: "Amatic SC", "arial", "calibri", sans-serif;
+}
+h2{
+    font-family: "Titan One", "arial", "calibri", sans-serif;
+}
+p{
+    text-align: justify;
+}
+@font-face {
+    font-family: "parrafos";
+    src: url("Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf")
+    format(truetype);
+}
+p{
+    font-family: "parrafos";
+}
