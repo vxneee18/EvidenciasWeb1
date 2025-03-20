@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a ZaGaShop</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="banner">
+    <h2>¡Nueva colección disponible ahora!</h2>
+    <p>Descubre las últimas tendencias en moda.</p>
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="producto">
+      <img src="camisaCasual.jpg" alt="Camisa" />
+      <h3>Camisa Casual</h3>
+      <p>$25.00</p>
+    </div>
+    <div class="producto">
+      <img src="jeansClasico.webp" alt="Jeans" />
+      <h3>Jeans Clásicos</h3>
+      <p>$40.00</p>
+    </div>
+    <div class="producto">
+      <img src="chaquetaElegante.webp" alt="Chaqueta" />
+      <h3>Chaqueta Elegante</h3>
+      <p>$60.00</p>
+    </div>
+  </section>
+
+  <section id="nosotros" class="nosotros">
+    <h2>Novedades</h2>
+    <p>Somos una marca dedicada a ofrecer ropa de calidad con estilo moderno.</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>

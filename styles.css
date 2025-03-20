@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+section {
+  padding: 40px;
+}
+.banner {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.productos {
+  display: flex;
+  justify-content: space-around;
+}
+.producto img {
+  width: 150px;
+  height: 150px;
+}
+.nosotros, .contacto {
+  background-color: #e7e7e7;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
