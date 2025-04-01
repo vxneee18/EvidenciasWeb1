@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Rock+Salt&display=swap" rel="stylesheet">
+  <title>Cafetería Sra Concha</title>
+</head>
+<body>
+  <header>
+    <h1>Cafetería Sra Concha</h1>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#pedidos">Pedidos en línea</a>
+      <a href="#reservaciones">Reservaciones</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div>
+    <section id="menu" class="section">
+      <h2>Menú</h2>
+      <nav><h4 style="color: white; font-family: Rock Salt, cursive;">Conchas</h4></nav>
+      <div class="mission-vision-container">
+        <div class="menu-item">
+            <img src="concha1.png" alt="Producto 1">
+            <div class="item-details">
+              <h4>Concha rellena de lechera y fruta</h4>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="concha2.png" alt="Producto 2">
+            <div class="item-details">
+              <h4>Concha rellena de glaseado con fruta y chocolate</h4>
+              <span class="price">$20.00</span>
+            </div>
+          </div>
+    </div>
+    <nav><h4 style="color: white; font-family: Rock Salt, cursive;">Bebidas</h4></nav>
+    <div class="mission-vision-container">
+        <div class="menu-item">
+            <img src="frape1.png" alt="Producto 1">
+            <div class="item-details">
+              <h4>Frappe de café con glaseado</h4>
+              <span class="price">$35.00</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="frape2.png" alt="Producto 2">
+            <div class="item-details">
+              <h4>Frappe de chocolate con glaseado</h4>
+              <span class="price">$30.00</span>
+            </div>
+          </div>
+    </div>
+    <div class="mission-vision-container">
+        <div class="menu-item">
+            <img src="cafe1.png" alt="Producto 1">
+            <div class="item-details">
+              <h4>Café de holla</h4>
+              <span class="price">$17.00</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="cafe2.png" alt="Producto 2">
+            <div class="item-details">
+              <h4>Latte frío</h4>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+    </div>
+    <div class="mission-vision-container">
+        <div class="menu-item">
+            <img src="malteada.png" alt="Producto 1">
+            <div class="item-details">
+              <h4>Malteda de chocolate</h4>
+              <span class="price">$45.00</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="malteada2.png" alt="Producto 2">
+            <div class="item-details">
+              <h4>Malteada de fresa</h4>
+              <span class="price">$50.00</span>
+            </div>
+          </div>
+    </div>
+
+    </section>
+
+    <section id="pedidos" class="section">
+      <h2>Pedidos en línea</h2>
+      <div class="form-container">
+        <div class="form">
+            <p>Registro</p>
+            <form action="#" method="POST">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+        <div class="form">
+            <p>Iniciar sesión</p>
+            <form action="#" method="POST">
+                <label for="login-username">Nombre de usuario:</label>
+                <input type="text" id="login-username" name="login-username" required>
+
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="login-password" required>
+
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <section id="reservaciones" class="section">
+      <h2>Reservaciones</h2>
+      <div class="form-container">
+        <div class="form">
+            <p>Formulario de Reservación</p>
+            <form action="#" method="POST">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="arrival-date">Fecha de Llegada:</label>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+    
+                <label for="departure-date">Fecha de Salida:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+    
+                <label for="num-people">Número de Personas:</label>
+                <input type="number" id="num-people" name="num-people" min="1" required>
+    
+                <label for="comments">Comentarios o Solicitudes Especiales:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+    
+                <button type="submit">Realizar Reservación</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <section id="nosotros" class="section">
+      <h2>Nosotros</h2>
+      <p>
+        Nuestro país tiene una diversidad de colores, sabores y texturas, somos el resultado de muchas mezclas del pasado y aunque nos gusta experimentar con sabores nuevos, nunca olvidamos nuestras RAÍCES, un pan muy nuestro.
+        Somos un concepto único, donde se crea un híbrido entre restaurante, cafetería y panadería especializado en conchas dulces y saladas, con variedad de combinaciones para que nuestros clientes siempre puedan probar algo diferente.
+        Contamos con más de 9 sabores de conchas, más de 12 sabores de rellenos dulces  que nos diferencian de cualquier panadería.
+        Innovar y crear es la base para satisfacer tu gusto, Sra. Concha especialistas en tu antojo.</p>
+        <div class="mission-vision-container">
+            <div class="form">
+                <h3>Misión</h3>
+                <p> Ofrecer la mejor panadería, innovando y creando productos de excelente 
+                    calidad, con el mejor servicio para nuestros clientes.</p>
+            </div>
+        
+            <div class="form">
+                <h3>Visión</h3>
+                <p>Posicionarnos como la panadería potosina por excelencia y diversificarnos en el ámbito nacional e internacional,
+                    desarrollando nuevos productos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <footer>
+        <div class="footer-container">
+            <div class="map">
+                <h3>Ubicación</h3>
+                <iframe src="https://maps.app.goo.gl/Lu4maqkm2RHwzHYE8" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p>Teléfono: 444 487 7687</p>
+                <p>Email: contacto@sraconcha.org</p>
+            </div>
+    
+            <div class="social-media">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/sraconchamx" target="_blank">Facebook</a>
+                <a href="https://www.tiktok.com/@sraconchamx" target="_blank">Tik-Tok</a>
+                <a href="https://www.instagram.com/sraconchamx/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    
+    </section>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Cafetería Sra Concha. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
