@@ -1,0 +1,49 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4fc3f7c2;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #e1f5fe;
+  }
+  header {
+    background-color: #007acc;
+    color: white;
+    padding: 2vh; /* Relativa a la altura del viewport */
+    text-align: center;
+  }
+  
+  #absolutas {
+    background-color: #fff;
+    width: 12cm;              /* Unidad absoluta */
+    padding: 20px;            /* px: absoluto */
+    margin: 1in auto;         /* in: absoluto */
+    border: 0.2cm solid #aaa; /* cm: absoluto */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  #relativas {
+    background-color: #e0f7fa;
+    width: 80%;               /* %: relativo al contenedor */
+    font-size: 1.2em;         /* em: relativo al padre */
+    padding: 2em;             /* em */
+    margin: 5vh auto;         /* vh: relativo al alto de la ventana */
+    border-radius: 1rem;      /* rem: relativo al root */
+  }
+  
