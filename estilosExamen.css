@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(143, 104, 143);
+    text-align: center;
+}
+label{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: plum;
+    color: white;
+    border: 2px solid rgb(240, 231, 240);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+label:hover{
+    background-color: white;
+    color: plum;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.imagen img{
+    width: 150px;
+    height: 120px;
+    border: 2px solid rgb(240, 231, 240);
+    border-radius: 5px;
+    margin: 10px;
+}
+  
