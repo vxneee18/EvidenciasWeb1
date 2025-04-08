@@ -2,7 +2,7 @@ body{
     background-color: rgb(143, 104, 143);
     text-align: center;
 }
-label{
+input{
     display: inline-block;
     padding: 8px 16px;
     background-color: plum;
@@ -11,7 +11,7 @@ label{
     border-radius: 6px;
     margin-bottom: 20px;
 }
-label:hover{
+input:hover{
     background-color: white;
     color: plum;
 }
