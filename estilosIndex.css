@@ -1,0 +1,73 @@
+body {
+    background-color: ghostwhite;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.encabezado {
+    background-color: rgba(175, 74, 74, 0.1);
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 2px solid rgba(175, 74, 74, 0.5);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(175, 74, 74, 0.836);
+    margin: 5px 0;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(223, 141, 141);
+    text-align: center;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(248, 217, 217);
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.lista-numerada {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
