@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Factura Dinámica</title>
+  <link rel="stylesheet" href="estilosform.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="factura.js" defer></script>
+  <style>
+    table, th, td {
+      border: 1px solid black; border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Factura</h2>
+  
+  <label>Cliente: <input type="text" id="cliente" /></label><br/><br/>
+
+  <label>Producto: <input type="text" id="producto" /></label>
+  <label>Cantidad: <input type="number" id="cantidad" min="1" /></label>
+  <label>Precio: <input type="number" id="precio" min="0.01" step="0.01" /></label>
+  <button onclick="agregarProducto()">Agregar producto</button><br/><br/>
+
+  <table id="tablaProductos">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio Unitario</th>
+        <th>Importe</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table><br/>
+
+  <p id="mensajeInfo" style="color: red;"></p>
+  <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+  <p><strong>IVA (16%):</strong> $<span id="iva">0.00</span></p>
+  <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+
+  <button onclick="generarPDF()">Generar Comprobante PDF</button>
+</body>
+</html>
