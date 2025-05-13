@@ -174,4 +174,15 @@ body {
     font-weight: bold;
     color: #0277bd;
   }
+
+  .faq h3 {
+  color: #333;
+  margin-top: 15px;
+}
+
+.faq p {
+  margin-left: 10px;
+  color: #555;
+}
+
   

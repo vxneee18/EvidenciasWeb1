@@ -210,8 +210,49 @@
     </section>
 </div>
 
+<div>
+    <section id="ayuda" class="section">
+      <h2>Preguntas Frecuentes (FAQ)</h2>
+      <div class="faq">
+        <h3>¿Cómo navego por el sitio?</h3>
+        <p>Utiliza el menú superior para acceder a las diferentes secciones. Si estás en móvil, toca el ícono de menú.</p>
+
+        <h3>¿Dónde puedo ver mi progreso?</h3>
+        <p>Tu progreso se guarda automáticamente y lo puedes consultar en la sección "Mi perfil".</p>
+
+        <h3>¿A quién contacto si tengo problemas técnicos?</h3>
+        <p>Puedes usar el chatbot en esta misma sección. </p>
+
+        <h3>¿Puedo acceder desde diferentes dispositivos?</h3>
+        <p>Sí, tu cuenta es accesible desde cualquier navegador con conexión a internet.</p>
+      </div>
+    </section>
+</div>
+
   <footer>
     <p>&copy; 2025 Cafetería Sra Concha. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2930720-1L90RRRY7EV6JQ88/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+</html>
 </body>
 </html>
