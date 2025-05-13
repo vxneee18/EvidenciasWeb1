@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico Astronomía</title>
+  <link rel="stylesheet" href="estilosPDF.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <h1>Diagnóstico de Astronomía</h1>
+
+  <form id="formulario">
+    <div class="pregunta">
+      <p>1. ¿Cuál es la estrella más cercana a la Tierra?</p>
+      <label><input type="radio" name="q1" value="Sol"> El Sol</label>
+      <label><input type="radio" name="q1" value="Sirius"> Sirius</label>
+      <label><input type="radio" name="q1" value="Alfa"> Alfa Centauri</label>
+    </div>
+
+    <div class="pregunta">
+      <p>2. ¿Qué planeta tiene anillos?</p>
+      <label><input type="radio" name="q2" value="Saturno"> Saturno</label>
+      <label><input type="radio" name="q2" value="Venus"> Venus</label>
+      <label><input type="radio" name="q2" value="Marte"> Marte</label>
+    </div>
+
+    <div class="pregunta">
+      <p>3. ¿Qué tipo de cuerpo es la Vía Láctea?</p>
+      <label><input type="radio" name="q3" value="Galaxia"> Galaxia</label>
+      <label><input type="radio" name="q3" value="Estrella"> Estrella</label>
+      <label><input type="radio" name="q3" value="Planeta"> Planeta</label>
+    </div>
+
+    <div class="pregunta">
+      <p>4. ¿Cuál es el planeta más grande del sistema solar?</p>
+      <label><input type="radio" name="q4" value="Júpiter"> Júpiter</label>
+      <label><input type="radio" name="q4" value="Tierra"> Tierra</label>
+      <label><input type="radio" name="q4" value="Urano"> Urano</label>
+    </div>
+
+    <div class="pregunta">
+      <p>5. ¿Qué instrumento se usa para observar estrellas?</p>
+      <label><input type="radio" name="q5" value="Telescopio"> Telescopio</label>
+      <label><input type="radio" name="q5" value="Microscopio"> Microscopio</label>
+      <label><input type="radio" name="q5" value="Binoculares"> Binoculares</label>
+    </div>
+
+    <button type="button" onclick="evaluar()">Enviar</button>
+  </form>
+
+  <div id="resultado"></div>
+  <canvas id="grafica" width="400" height="200"></canvas>
+  <button onclick="crearPDF()">Descargar PDF</button>
+
+  <script src="formjs.js"></script>
+</body>
+</html>
