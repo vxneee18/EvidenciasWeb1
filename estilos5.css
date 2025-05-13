@@ -1,0 +1,86 @@
+body {
+  background-color: #f9f5ff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(106, 27, 154, 0.1);
+  border-left: 5px solid #ba68c8;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 150px;
+  font-weight: bold;
+  color: #7b1fa2;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1c4e9;
+  border-radius: 6px;
+  background-color: #f3e5f5;
+  color: #4a148c;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="button"] {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #ab47bc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+}
+
+input[type="button"]:hover {
+  background-color: #8e24aa;
+}
+
+#resultado {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f3e5f5;
+  border-left: 5px solid #ce93d8;
+  border-radius: 10px;
+  color: #4a148c;
+  font-size: 16px;
+}
