@@ -1,0 +1,55 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Contenido {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #444;
+}
+
+input[type="text"],
+input[list],
+input[type="number"] {
+    padding: 8px;
+    width: 200px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="button"] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f7acf3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #920173;
+}
+
+.resultados {
+    margin-top: 20px;
+    color: #333;
+}
