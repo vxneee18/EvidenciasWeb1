@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en"> 
+  <head>
+    <title>INICIO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" 
+    href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel"> 
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a href="index.html"><img class="brand-logo-light" src="images/logoSraConcha.png" 
+                    alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Menú</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">Inicio</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Nosotros</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacto</a>
+                      </li>
+                    </ul><a class="button button-white button-sm" href="#">Carrito</a>
+                  </div>
+                </div><a class="button button-white button-sm" href="#">Carrito</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="parallax-container overlay-1" data-parallax-img="images/fondo.png">
+        <div class="parallax-content breadcrumbs-custom context-dark"> 
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-9">
+                <h2 class="breadcrumbs-custom-title">Inicio</h2>
+                <ul class="breadcrumbs-custom-path">
+                  <li><a href="index.html">MENÚ</a></li>
+                  <li class="active">INICIO</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-gray-1 text-center">
+        <div class="container">
+          <div style="max-width: 700px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; margin-bottom: 24px; color: #2c3e50;">Finaliza tu pedido 🧾</h2>
+
+    <form id="formularioFactura" style="display: flex; flex-direction: column; gap: 20px;">
+
+      <!-- Datos del cliente -->
+      <input type="text" id="cliente" placeholder="Nombre completo" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+      <input type="email" id="correo" placeholder="Correo electrónico" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+      <input type="tel" id="telefono" placeholder="Teléfono" required style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+
+      <!-- Método de pago -->
+       <label for="metodoPago" style="font-weight: 600;">Método de pago</label><br>
+      <input list="metodosPago" id="metodoPago" name="metodoPago" placeholder="Selecciona método de pago"
+        style="width: 100%; padding: 10px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc;" required>
+      <datalist id="metodosPago">
+        <option value="Efectivo"></option>
+        <option value="Tarjeta"></option>
+        <option value="Transferencia"></option>
+      </datalist>
+
+
+      <!-- Productos -->
+      <h3 style="margin-top: 10px; color: #34495e;">Selecciona tus productos:</h3>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <h4>Conchas</h4>
+        <!-- Producto 1 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Concha" data-precio="25"> Concha fruta</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 2 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Café" data-precio="16"> Concha crema</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 3 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Tisana" data-precio="25"> Concha café</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 4 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Malteada" data-precio="23"> Concha rol</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 5 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Malteada" data-precio="40"> Conchapanini</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <h4>Bebidas</h4>
+        <!-- Producto 6 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Malteada" data-precio="35"> Frappe de café</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 7 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Malteada" data-precio="10"> Café de olla</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 8 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Malteada" data-precio="30"> Frappe de chocolate</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+        <!-- Producto 9 -->
+        <label style="display: flex; justify-content: space-between; background: #f9f9f9; padding: 12px; border-radius: 8px;">
+          <span><input type="checkbox" name="producto" value="Malteada" data-precio="15">Latte frío</span>
+          <input type="number" name="cantidad" min="1" value="1" style="width: 60px;">
+        </label>
+      </div>
+
+      <!-- Botón -->
+      <button type="button" onclick="generarPDF()"
+              style="background-color: #2ecc71; color: white; padding: 14px; font-weight: bold; font-size: 16px; border: none; border-radius: 8px; cursor: pointer;">
+        Generar factura PDF
+      </button>
+    </form>
+  </div>
+
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Script PDF -->
+  <script>
+    function generarPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      const nombre = document.getElementById('cliente').value.trim();
+      const correo = document.getElementById('correo').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const metodo = document.getElementById('metodoPago').value;
+
+      if (!nombre || !correo || !telefono || !metodo) {
+        alert("Por favor, completa todos los datos del cliente.");
+        return;
+      }
+
+      const productos = document.querySelectorAll('input[type="checkbox"][name="producto"]');
+      const cantidades = document.querySelectorAll('input[type="number"][name="cantidad"]');
+
+      let y = 20;
+      let total = 0;
+
+      doc.setFontSize(16);
+      doc.text("Factura - Cafetería Sr. Concha ☕", 20, y);
+      y += 10;
+      doc.setFontSize(12);
+      doc.text(`Cliente: ${nombre}`, 20, y += 10);
+      doc.text(`Correo: ${correo}`, 20, y += 8);
+      doc.text(`Teléfono: ${telefono}`, 20, y += 8);
+      doc.text(`Método de pago: ${metodo}`, 20, y += 10);
+
+      doc.setFontSize(14);
+      doc.text("Detalle de productos:", 20, y += 10);
+      doc.setFontSize(12);
+
+      productos.forEach((producto, i) => {
+        if (producto.checked) {
+          const nombreProd = producto.value;
+          const precio = parseFloat(producto.dataset.precio);
+          const cantidad = parseInt(cantidades[i].value);
+          const subtotal = precio * cantidad;
+          total += subtotal;
+
+          doc.text(`- ${nombreProd} x${cantidad} = $${subtotal.toFixed(2)}`, 25, y += 8);
+        }
+      });
+
+      doc.setFontSize(14);
+      doc.text(`Total: $${total.toFixed(2)}`, 20, y += 12);
+
+      doc.save("factura_srconcha.pdf");
+    }
+  </script>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer">
+          <div class="wow fadeIn">
+            <div class="row row-60">
+            <div class="col-12"><a href="index.html"><img src="images/logoSraConcha.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="#">Menú</a></li>
+                  <li><a href="typography.html">Nosotros</a></li>
+                  <li><a href="contacts.html">Contacto</a></li>
+                  <li><a href="#">Galería</a></li>
+                  <li><a href="about-us.html">Inicio</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="social-list">
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="https://www.facebook.com/sraconchamx"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://www.instagram.com/sraconchamx/"></a></li>
+                </ul>
+              </div>
+            </div>
+            <p>&copy; 2025 Cafetería Sra Concha. Todos los derechos reservados.</p>  
+            </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
